@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta property="og:title" content="Zusje Puzzle Game" />
+<meta property="og:description" content="Play a fun, responsive puzzle game online!" />
+<meta property="og:image" content="https://daj-bot.github.io/zusjepuzzle.io/img/thumbnail.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://daj-bot.github.io/zusjepuzzle.io" />
+<meta property="og:type" content="website" />
+  <title>Puzzle Game</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main>      <!-- Status bar -->
+      <div class="status">
+        <div class="badge" id="scoreText">Score: 0</div>
+        <div class="badge" id="statusText">Status: Ready</div>
+        <div class="badge" id="timerText">Time left: 03:00</div>
+      </div>
+    <div class="board-wrap">
+      <canvas id="puzzleCanvas"></canvas>
+
+      <!-- Overlay with PLAY button -->
+      <div id="overlay" class="overlay">
+        <button id="playBtn">PLAY</button>
+      </div>
+
+
+    </div>
+    <div id="scorePopup">+10</div>
+    <div id="countdownOverlay" style="
+  position:absolute; 
+  top:0; left:0; right:0; bottom:0;
+  display:none; 
+  justify-content:center; 
+  align-items:center; 
+  background:rgba(0,0,0,0.7);
+  color:#fff; 
+  font-size:72px; 
+  font-weight:bold;
+">
+  <span id="countdownText"></span>
+</div>
+  </main>
+  <script src="js/game.js"></script>
+</body>
+</html>
